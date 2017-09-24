@@ -1,0 +1,242 @@
+
+
+/*font*/
+
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('/resources/fonts/Aaargh-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Global styles*/
+
+body {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    font-family: 'aaarghnormal';
+    
+}
+
+
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.columnhalf {
+    width: 50%;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+
+/*header section*/
+
+#header {
+    width: 100%;
+    height: 7rem;
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    z-index: 1; 
+    border-bottom: 1px solid #FFB700;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 6rem;
+    display: flex;
+
+    align-items: center;
+    max-width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation {
+    flex-grow: 1;
+    background-color: black;
+}
+
+.navigation span {
+    display: inline-block;
+    padding: 10px 10px;
+    justify-content: space-around
+}
+
+.mobile {
+    font-size: 2rem;
+}
+
+.navigation a {
+    color: #FFB700;
+    text-decoration: none;
+    background-color: black;
+}
+/*main content*/
+
+.content {
+    opacity: 0.9;
+    width: 100%;
+    margin: auto;
+}
+
+.hero {
+    height: 25rem;
+    background-size: cover;
+    border-bottom: 1px solid #FFB700;
+    padding-top: 7rem;
+    
+}
+
+.indeximg,
+.honestyimg,
+.contactimg, 
+.servicesimg {;
+      position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.honestyimg,
+.contactimg, 
+.servicesimg {
+        height:2rem;
+}
+
+.indeximg {
+     background-image: url("/resources/img/audiogrillmonster.jpeg");
+}
+
+.honestyimg {
+
+    background-image: url("/resources/img/audiogrillmonster.jpeg");
+
+}
+
+.contactimg {
+        background-image: url("/resources/img/gearsticksilver.jpeg");
+
+}
+
+.servicesimg {
+        background-image: url("/resources/img/gearsticksilver.jpeg");
+
+}
+
+
+
+.hero img {
+        max-width: 100%;
+}
+
+.titlelogo {
+    margin: auto;  
+/*    background-color: black;*/
+    width: 100%;
+    color: #FFB700;
+    font-size: 4rem;
+}
+
+.makes {
+    padding: 2rem;
+    display: flex;
+
+}
+.makes img {
+
+}
+
+.make {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#servicebox  {
+    color: #ffB700;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    background-color: black;
+    border-top: 1px solid #FFB700;
+    border-bottom: 1px solid #FFB700;
+    
+}
+
+#servicebox h5 {
+    font-size: 2rem;
+}
+
+#servicebox ul {
+    list-style-type: none;
+}
+.honesty {
+    background-color: #FFB700;
+    color: black;
+    font-size: 2rem;
+}
+
+#contact  {
+    color: black;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    background-color: #ffb700;
+    padding-top: 6rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+#contact p {
+    font-size: 3rem;  
+    margin: 0;
+}
+
+#contact p {
+    font-size: 2rem;
+}
+
+.footer {
+     color: #ffB700;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: black;
+}
+
+#contact a {
+    color: black;
+}
+
+.footer a {
+    color: #ffb700;        
+}
+
+#contact a,
+.footer a {
+    text-decoration: none
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .indeximg, .honestyimg, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6  {
+        background-attachment: scroll;
